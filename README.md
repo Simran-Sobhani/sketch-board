@@ -2,7 +2,7 @@
 
 A feature-rich whiteboard application built using **Vanilla JavaScript** and the **HTML5 Canvas API**.
 
-CanvasBoard allows users to draw freely, create shapes, erase content, and manage drawings with undo/redo functionality — all inside a responsive canvas.
+SketchBoard allows users to draw freely, create shapes, erase content, and manage drawings with undo/redo functionality — all inside a canvas.
 
 ## 🚀 Live Demo
 
@@ -20,9 +20,7 @@ Or run it locally by cloning the repository.
 
 Watch the project in action:
 
-<video width="100%" controls>
-  <source src="./assets/preview-video.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/705ad2b2-ebd3-4db4-af0e-8965ab9b6196
 
 ## ✨ Features
 
@@ -56,7 +54,7 @@ git clone https://github.com/Simran-Sobhani/sketch-board
 Open the project folder:
 
 ```bash
-cd canvas-board
+cd sketch-board
 ```
 
 Run the project by opening:
