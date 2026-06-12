@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    padding-top: 10px;
+}
+
+canvas {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.tools {
+    display: flex;
+    padding: 1px 10px;
+    gap: 1px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    width: fit-content;
+    background-color: #F3F4F6;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.tools_operation,
+.tools_colors,
+.tools_tool {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1px;
+
+}
+
+    
+.color-field {
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+} 
+
+.color-field ion-icon {
+    font-size: 25px;
+}
+
+ion-icon {
+    font-size: 20px;
+}
+
+
+button {
+    align-self: center;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+button:hover,
+.color-field:hover {
+    background-color: #bfc2c6;
+}
+
+
+.color-picker {
+    align-self: center;
+}
+
+.pen-range {
+    align-self: center;
+    width: 25px;
+    padding: 2px;
+}
+
+.selected {
+    background-color: #D1D5DB;    
+}

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="tools">
+      <div class="tools_operation">
+        <button
+          title="Undo"
+          onclick="undoOperation()"
+          class="button"
+          type="button"
+        >
+          <ion-icon name="arrow-undo-sharp"></ion-icon>
+        </button>
+        <button
+          title="Redo"
+          onclick="redoOperation()"
+          class="button"
+          type="button"
+        >
+          <ion-icon name="arrow-redo-sharp"></ion-icon>
+        </button>
+        <button
+          title="Clear"
+          onClick="clearCanvas()"
+          class="button"
+          type="button"
+        >
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="tools_tool">
+        <button
+          title="Pencil"
+          class="button"
+          type="button"
+          onclick="
+            currentTool = 'stroke';
+            isErasing = false;
+          "
+        >
+          <ion-icon name="pencil-sharp"></ion-icon>
+        </button>
+        <button
+          title="Eraser"
+          class="button"
+          type="button"
+          onclick="
+            isErasing = true;
+            currentTool = 'stroke';
+          "
+        >
+          <ion-icon name="fish-outline"></ion-icon>
+        </button>
+        <button
+          title="Rectangle"
+          class="button"
+          type="button"
+          onclick="
+            currentTool = 'rectangle';
+            isErasing = false;
+          "
+        >
+          <ion-icon name="square-outline"></ion-icon>
+        </button>
+        <button
+          title="Ellipse"
+          class="button"
+          type="button"
+          onclick="
+            currentTool = 'ellipse';
+            isErasing = false;
+          "
+        >
+          <ion-icon name="ellipse-outline"></ion-icon>
+        </button>
+        <button
+          title="Line"
+          class="button"
+          type="button"
+          onclick="
+            currentTool = 'line';
+            isErasing = false;
+          "
+        >
+          <ion-icon name="remove-outline"></ion-icon>
+        </button>
+        <input
+          name="brushSize"
+          title="Stroke Size"
+          oninput="brushSize = this.value"
+          type="number"
+          min="1"
+          max="100"
+          class="pen-range"
+        />
+      </div>
+      <div class="tools_colors">
+        <div
+          onclick="currentColor = 'blue'"
+          class="color-field"
+          style="color: blue"
+        >
+          <ion-icon name="square"></ion-icon>
+        </div>
+        <div
+          onclick="currentColor = 'green'"
+          class="color-field"
+          style="color: green"
+        >
+          <ion-icon name="square"></ion-icon>
+        </div>
+        <div
+          onclick="currentColor = 'yellow'"
+          class="color-field"
+          style="color: yellow"
+        >
+          <ion-icon name="square"></ion-icon>
+        </div>
+        <div
+          onclick="currentColor = 'red'"
+          class="color-field"
+          style="color: red"
+        >
+          <ion-icon name="square"></ion-icon>
+        </div>
+        <input
+          name="currentColor"
+          oninput="currentColor = this.value"
+          type="color"
+          class="color-picker"
+        />
+      </div>
+    </div>
+
+    <div class="field">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
