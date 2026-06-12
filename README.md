@@ -1,4 +1,4 @@
-# CanvasBoard 🎨
+# SketchBoard 🎨
 
 A feature-rich whiteboard application built using **Vanilla JavaScript** and the **HTML5 Canvas API**.
 
@@ -8,7 +8,7 @@ CanvasBoard allows users to draw freely, create shapes, erase content, and manag
 
 You can try the project here:
 
-**🔗 Visit:** `https://sketchboard013.netlify.app/`
+🔗 [Try SketchBoard](https://sketchboard013.netlify.app/)
 
 Or run it locally by cloning the repository.
 
@@ -20,10 +20,9 @@ Or run it locally by cloning the repository.
 
 Watch the project in action:
 
-```html
-<video src="./assets/preview-video.mp4" controls width="100%"></video>
-```
-
+<video width="100%" controls>
+  <source src="./assets/preview-video.mp4" type="video/mp4">
+</video>
 
 ## ✨ Features
 
@@ -51,7 +50,7 @@ Watch the project in action:
 Clone the repository:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Simran-Sobhani/sketch-board
 ```
 
 Open the project folder:
